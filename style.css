@@ -1,0 +1,64 @@
+html, body {
+    background-color: rgb(35, 40, 48);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(79, 90, 108);
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    gap: 0.3em
+}
+
+.header-tabs {
+    position: absolute;
+    right: 0;
+    padding-right: 0.5em;
+}
+
+button {
+    border-style: none;
+    background-color: rgb(99, 112, 134);
+    color: white;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-radius: 1em;
+    box-shadow: 0px 2px 3px rgb(59, 68, 81);
+    transition: 0.2s
+}
+button:hover {
+    background-color: rgb(124, 140, 168);
+    box-shadow: 0px 2px 3px rgb(50, 58, 68);
+}
+button:active {
+    background-color: rgb(74, 83, 98);
+    box-shadow: 0px 2px 3px rgb(50, 58, 68);
+}
+
+.project {
+    background-color: rgb(79, 90, 108);
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0px 4px 3px rgb(50, 58, 68);
+}
+
+.project-description {
+    margin-top: -1.2em;
+    font-size: 1em;
+    opacity: 0.9;
+}

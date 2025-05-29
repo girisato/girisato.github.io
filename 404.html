@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Page not found</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                html,body {
+                    background-color: rgb(10, 10, 10);
+                    color: red;
+                    font-family:Arial;
+                    height:100%;
+                }
+
+                .container {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+                    animation: 0.8s alternate slide-in;
+                    opacity: 1
+                }
+
+                .title {
+                    transform: scale(130%);
+                    animation: 1s alternate slide-in-title;
+                }
+            
+                @keyframes slide-in-title {
+                    from {
+                        transform: scale(90%);
+                    }
+                    to {
+                        transform: scale(130%);
+                    }
+                }
+
+                @keyframes slide-in {
+                    from {
+                        opacity: 0;
+                        gap: 0px;
+                    }
+                }
+
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="title" style="font-size: 3em">404</h1>
+                <p class="subtitle" style="font-size: 1.2em">Page not found</p>
+            </div>
+        </body>
+    </html>
