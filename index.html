@@ -2,78 +2,54 @@
     <html>
         <head>
             <title>@realbxnnie</title>
-            <link rel="stylesheet" href="./styles.css">
-            <script src="./index.js"></script>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <script src="./assets/scripts/three.r134.min.js"></script>
+            <script src="./assets/scripts/vanta.net.min.js"></script>
+            <script>
+           document.addEventListener("DOMContentLoaded", () => {
+             VANTA.NET({
+               el: "#vanta-bg",
+    mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x5cff,
+  backgroundColor: 0x1a1a1a,
+  points: 20.00,
+  maxDistance: 26.00,
+  spacing: 16.00
+            })
+           })
+</script>
         </head>
+
         <body>
-            <header>
-                <div class="header-container">
-                    <p>realbxnnie</p>
-                    <div class="header-tabs">
-                        <button id="tab-about">About</button>
-                        <button id="tab-projects">Projects</button>
-                        <button id="tab-contact">Contact</button>
-                    </div>
-                </div>
-            </header>
-            <div id="about" style="display:flex;align-items:center;justify-content: center;">
-                <h1>About</h1>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:0;">
-                <svg width="136" height="42" viewBox="0 0 246 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M242 4L209.041 32.5381C202.942 37.8194 193.757 37.3299 188.254 31.43L172.654 14.7071C167.1 8.75238 157.809 8.31707 151.722 13.7263L130.85 32.2736C124.763 37.6829 115.472 37.2476 109.918 31.2929L94.5123 14.7778C88.9315 8.79503 79.5858 8.38798 73.506 13.8629L52.8023 32.5066C46.8874 37.8331 37.8419 37.6119 32.1944 32.0027L4 4" stroke="rgb(79, 90, 108)" stroke-width="10"/>
-                </svg>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:0;padding:1em">
-                <p>Sophomore Programmer & Middle UI Designer. Favorite animals are rabbits :>. I use Arch Linux. Fond of operating systems (Windows, macOS, GNU/Linux), and yeah, i know that GNU/Linux is a kernel. I know Python, TypeScript, C#, and a little bit of C/C++.</p>
-            </div>
+            <div id="vanta-bg"></div>
+            <center>
+               <div class="Biography">
+                  <div class="Project">
+                    <center>
+                        <img src="./assets/img/pfp.jpg" width="128" style="border-radius: 500%;">
 
-            <div id="projects" style="display:flex;align-items:center;justify-content: center;">
-                <h1>Projects</h1>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:0;">
-                <svg width="136" height="42" viewBox="0 0 246 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M242 4L209.041 32.5381C202.942 37.8194 193.757 37.3299 188.254 31.43L172.654 14.7071C167.1 8.75238 157.809 8.31707 151.722 13.7263L130.85 32.2736C124.763 37.6829 115.472 37.2476 109.918 31.2929L94.5123 14.7778C88.9315 8.79503 79.5858 8.38798 73.506 13.8629L52.8023 32.5066C46.8874 37.8331 37.8419 37.6119 32.1944 32.0027L4 4" stroke="rgb(79, 90, 108)" stroke-width="10"/>
-                </svg>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:10px;">
-                <div class="project">
-                    <h2>Rabbit</h2>
-                    <p class="project-description">A powerful Telegram userbot.</p>
-                    <button onclick="window.open('https://github.com/realbxnnie/Rabbit')">Download</button>
+                        <h2>@realbxnnie</h2>
+                        <p style="margin-top: -0.7em">Sophomore Programmer</p>
+                        <p style="margin-top: -0.7em">Middle UI Designer</p>
+                        <br>
+                        <p style="margin-top: -0.7em;">🥳 February 10th</p>
+                        <p style="margin-top: -0.7em;">📍 Kyoto, Japan</p>
+                    
+                        <button onclick="window.open('projects.html')">Projects</button>
+                        <button onclick="window.open('https://github.com/realbxnnie')">GitHub</button>
+                        <button onclick="window.open('https://youtube.com/@realbxnnie')">YouTube</button>
+                    </center>
                 </div>
-                <div class="project">
-                    <h2>Mint</h2>
-                    <p class="project-description">A package manager for Candycane GNU/Linux.</p>
-                    <button onclick="window.open('https://github.com/realbxnnie/Mint')">Compile</button>
-                </div>
-            </div>
+               </div>
+              
+            </center>
 
-            <div id="contact" style="display:flex;align-items:center;justify-content: center;">
-                <h1>Contact</h1>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:0;">
-                <svg width="136" height="42" viewBox="0 0 246 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M242 4L209.041 32.5381C202.942 37.8194 193.757 37.3299 188.254 31.43L172.654 14.7071C167.1 8.75238 157.809 8.31707 151.722 13.7263L130.85 32.2736C124.763 37.6829 115.472 37.2476 109.918 31.2929L94.5123 14.7778C88.9315 8.79503 79.5858 8.38798 73.506 13.8629L52.8023 32.5066C46.8874 37.8331 37.8419 37.6119 32.1944 32.0027L4 4" stroke="rgb(79, 90, 108)" stroke-width="10"/>
-                </svg>
-            </div>
-            <div style="display:flex;align-items:center;justify-content:center;gap:10px;">
-                <div class="project">
-                    <h2>Telegram</h2>
-                    <p class="project-description">iocalise</p>
-                    <button onclick="window.open('https://t.me/Iocalise')">Open</button>
-                </div>
-                <div class="project">
-                    <h2>GitHub</h2>
-                    <p class="project-description">realbxnnie</p>
-                    <button onclick="window.open('https://github.com/realbxnnie')">Open</button>
-                </div>
-                <div class="project">
-                    <h2>Discord</h2>
-                    <p class="project-description">.bxnniee</p>
-                    <button onclick="window.open('https://discord.com/users/1045892786794278982')">Open</button>
-                </div>
-            </div>
         </body>
     </html>

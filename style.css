@@ -1,0 +1,95 @@
+html,body {
+    background: rgb(30,30,30);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+button {
+    background: rgb(58, 58, 58);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 0px 0.6px rgb(143, 143, 143);
+    transition: .2s
+}
+
+button:hover {
+    transform: scale(1.04);
+    background: rgb(73, 73, 73);
+}
+
+button:active {
+    background: rgb(44, 44, 44);
+    box-shadow: 0px 0px 0px 0.6px rgb(117, 117, 117);
+    transform: scale(0.9)
+}
+
+.locked {
+    background: rgb(38, 38, 38);
+    color: rgb(152, 152, 152);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: none;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 0px 0.6px rgb(86, 86, 86);
+    transition: .2s
+}
+
+.locked:hover {
+    transform: scale(1);
+    background: rgb(38,38,38);
+}
+
+.locked:active {
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 0.6px rgb(86,86,86);
+    background: rgb(38,38,38);
+}
+
+.Projects {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    left: 100%;
+}
+
+.Biography {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#vanta-bg {
+ position:absolute;
+ z-index:0;
+ width:100%;
+ height: 100%;
+ padding: 0;
+}
+
+.Project {
+    background: rgba(41, 41, 41, 0.71);
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 0px 0.6px rgb(84, 84, 84);
+    padding: 1em;
+    width: 100%;
+    margin-top: 0.8em;
+    backdrop-filter: blur(5px);
+}
+
+.tag {
+    background: rgba(23, 120, 255, 0.61);
+    border-radius: 0.4em;
+    padding: 0em 0.5em 0em 0.5em;
+    display: table;
+    box-shadow: 0px 0px 0px 0.6px rgb(92, 149, 255);
+}
+
+.tag-title {
+    color: rgb(165, 197, 255);
+    font-weight: 500;
+}
